@@ -1,0 +1,107 @@
+<<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}" >
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>SHM A&S</title>
+  </head>
+  <body class="bg-nav1">
+    <nav class="navbar">
+      <h1 class="navbar-brand text-light font-italic">STUDENT AiD</h1>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-light display-4 mt-70" style="font-size:30px">REGISTRATION PANEL</h1>
+                <h1 class="text-light display-4 " style="font-size:17px">Please fill all the details!</h1>
+
+            <div class="col-md-8">
+
+                        <form class="form" method="post" action="/add_user" >
+                            <div class="form-row text-light">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6 text-light">
+                                     <label for="inputPassword">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password">
+                                </div>
+                            </div>
+                             <div class="form-group text-light">
+                                 <label for="inputName">NAME</label>
+                                 <input type="text" class="form-control" id="inputName" placeholder="FULL NAME" name="name">
+                             </div>
+                             <div class="form-group text-light">
+                                 <label for="inputUSN">USN</label>
+                                 <input type="text" class="form-control" id="inputUSN" placeholder="USN NUMBER" name="usn">
+                             </div>
+
+                             <div class="form-group   ">
+                                    <label class="text-light" for="inputBranch">BRANCH</label>
+                                    <select id="inputBranch" class="form-control" name="branch">
+                                        <option selected>select Branch..</option>
+                                        <option value="CSE">CSE</option>
+                                        <option value="ISE">ISE</option>
+                                        <option value="TCE">TCE</option>
+                                        <option value="ME">ME</option>
+                                        <option value="CE">CE</option>
+                                        <option value="AIE">AIE</option>
+                                        <option value="MLE">MLE</option>
+
+                                    </select>
+                             </div>
+                             <div class="form-row text-light">
+                                <div class="form-group col-md-4">
+                                    <label for="inputSemester">Semester</label>
+                                    <select id="inputSemester" class="form-control" name="sem">
+                                        <option selected>select..</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputSection">Section</label>
+                                    <input type="text" class="form-control" id="inputSection" name="section">
+                                </div>
+                                 <div class="form-group col-md-4">
+                                     <label for="inputphonenumber">PhoneNumber</label>
+                                     <input type="tel" class="form-control" id="inputphonenumber" name="phno">
+                                 </div>
+                             </div>
+
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+
+                        <h1 class="navbar-brand text-Danger font-italic">Registered successfully</h1> <a href="/" >CLICK HERE TO LOGIN</a></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-nav3 mt-100" >
+        <p>PYTHON PROJECT<br>
+        <p>SHAMANTH SHETTY </P></p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}" >
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+
+
+
+    <title>SHM A&S</title>
+  </head>
+<body class="bg-nav2">
+  <div class=" d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-nav3 border-bottom shadow-sm">
+    <h2 class=" text-light font-italic font-weight-bolder my-0 mr-md-auto font-weight-normal " style="font-size: 30px;">STUDENT AiD</h2>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <li class="nav-item dropdown">
+            <a class=" btn btn-light dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ASSIGNMENT
+             </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/UPLOAD">UPLOAD<a>
+              <a class="dropdown-item" href="/UPDATE">UPDATE</a>
+            <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/DELETE">DELETE</a>
+          </div>
+        </li>
+        <a class="p-2 text-light" href="/calendar">Calender</a>
+        <a class="p-2 text-light" href="#">6feet applications</a>
+        <a class="p-2 text-light" href="#">Attendance</a>
+        <a class="p-2 text-light" href="#">Support</a>
+    </nav>
+    <a class="btn btn-light" href="/logout">Log out</a>
+ </div>
+         <div class="jumbotron mx-4 text-white rounded bg-nav1">
+          <div class="col-md-6 px-0">
+             <h1 class="display-4 font-italic blog-header-logo">UPDATE YOUR ASSIGNMENTS </h1>
+             <h1 class="display-4 font-italic blog-header-logo">IN THE BELOW FORM </h1>
+             <p class="lead my-3">Please enter the correct file name of the assignment you have to upload </p>
+             <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">and then upload the new file</a></p>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-4 mx-auto my-auto">
+      <div class="card mt-100 mx-auto my-auto bg-nav1">
+        <div class="card-body   ">
+            <form class="form text-light" method="post" action="/UPDATER" enctype="multipart/form-data">
+              <label for="subject">  CHOOSE A SUBJECT:  </label>
+              <select id="SUBJECT" name="subject">
+                <option value="DBMS">DBMS</option>
+                <option value="CN">CN</option>
+                <option value="ATC">ATC</option>
+                <option value="UNIX">UNIX</option>
+                <option value="PYHTON">PYTHON</option>
+                <option value="M&E">M&E</option>
+              </select><br><br>
+              <label>USN</label><br>
+              <input type="text" class="form-control" name="usn" placeholder="1BY18IS146"><br><br>
+                <label>EXISITING ASSIGNMENT NAME </label><br>
+                <input type="text" class="form-control" name="Assignmentold" placeholder="1BY18IS108_DBMS_1"><br><br>
+                <label>NEW ASSIGNMENT NAME </label><br>
+                <input type="text" class="form-control" name="Assignmentnew" placeholder="1BY18IS108_DBMS_2"><br><br>
+                <label>  CHOOSE A FILE   </label><br>
+                <input type="file" class="form-control" name="file2"><br><br>
+                <input type="submit" class="btn btn-dark btn-block btn-lg" value="SUBMIT">
+            </form>
+            
+        </div>
+      </div>
+      </div>
+
+      <footer class="bg-nav3 mt-100" >
+        <p>PYTHON PROJECT<br>
+        <p>SHAMANTH SHETTY </P></p>
+      </footer>
+
+
+
+</body>
+</html>
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
